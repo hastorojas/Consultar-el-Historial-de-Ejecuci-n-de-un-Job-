@@ -1,3 +1,6 @@
+ #SQL SERVER
+ ##Quey para consultar el historial de Ejecucion de un Job
+ 
  use msdb
   go
  select
@@ -27,3 +30,4 @@
  b.name not in ('SSIS Server Maintenance Job','syspolicy_purge_history')
  --and b.name = 'DWJob_load_adhesion'
 order by run_date desc
+
